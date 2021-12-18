@@ -1,0 +1,71 @@
+/*(0,0,1)*/
+body{
+	text-align: center;
+	background-color: khaki;
+}
+/*(0,0,1)*/
+form {
+	display: grid;
+	grid-template-columns: repeat(7, 5em);
+	grid-template-rows: repeat(8, 5em);
+	margin: auto;
+	background-color: grey;
+	border-radius: 0.5em;
+	width: fit-content;
+}
+/*(0,0,2)*/
+form input{
+	font-size: 1.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+	background-color: lightgray;
+}
+/*(0,1,1)*/
+form :nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 8;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background-color: white;
+	text-align: end;
+	resize: none;
+	border-radius: 0.5em;
+	margin: 1em;
+}
+/*(0,1,1)*//*(0,1,1)*/
+form :nth-child(2), form :nth-child(5){
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-color: black;
+	color:white;
+}
+/*(0,1,1)*//*(0,1,1)*/
+form :nth-child(3), form :nth-child(6){
+	grid-column-start: 3;
+	grid-column-end: 6;
+	background-color: black;
+	color:white;
+}
+/*(0,1,1)*//*(0,1,1)*/
+form :nth-child(4), form :nth-child(7){
+	grid-column-start: 6;
+	grid-column-end: 8;
+	background-color: black;
+	color:white;
+}
+/*(0,1,1)*/
+form :nth-child(8){
+	grid-column-start: 6;
+	grid-column-end: 8;
+	grid-row-start: 5;
+	grid-row-end: 10;
+	background-color: blue;
+	color:white;
+}
+/*(0,1,1)*/
+form :nth-child(4n+9){
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-color: red;
+	color:white;
+}
